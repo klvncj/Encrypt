@@ -17,13 +17,14 @@
         <input type="file" id="encryptFileInput" onchange="" placeholder="Enter File" class="w-80 bg-black text-white rounded p-1">
         <input type="submit" value="Encrypt" class="w-90 bg-black text-white rounded my-4  h-8 hover:bg-gray-700 hover:text-white duration-700" >
         <a id="encryptedLink" class="flex justify-center text-red-500" download  style="display: none;" >Download Encrypted File</a>
-        <span id="key"></span>
+        <span id="key" onclick="copy.showToast()" class="hover:cursor-pointer"></span>
     </form>
 </div >
         <script src="./js/aos.js"></script>
         <script src="./js/tailwind.js"></script>
         <script type="text/javascript" src="./js/Toastify.js"></script>
         <script src="./js/script.js"></script>
+
     </div>
 </body>
 </html>
