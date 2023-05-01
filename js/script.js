@@ -1,17 +1,22 @@
 var copy = Toastify({
   text: "Key copied",
-  duration: 5000
+  duration: 5000,
+  progressBar: true,
+  backgroundColor: "green",
 })
 
  function copy(){
     var enkey = document.getElementById('key').value
-    navigator.clipboard.writeText(enkey);
+   return navigator.clipboard.writeText(enkey);
     copy.showToast()
  }
 
+ 
 var success = Toastify({
   text: "File Encrypted",
-  duration: 5000
+  duration: 5000,
+  progressBar: true,
+  backgroundColor: "green",
  })
 
 function encryptFile() {

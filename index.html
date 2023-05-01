@@ -10,14 +10,21 @@
     <title>Kelvin's Encryption</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
 </head>
-<body class="bg-[#252525]">
-<div class="area flex justify-center" >
-    <form id="encrypt" class="flex flex-col bg-[#f1faee] p-3 my-24 rounded-xl h-96 justify-center" data-aos="fade-up" data-aos-duration="2000" >
-        <h1 class="flex justify-center text-3xl p-4 font-mono">ENCRYPT</h1>
+<style>
+body{
+    background: rgb(37,37,37);
+    background: linear-gradient(90deg, rgba(37,37,37,1) 10%, rgba(37,118,155,1) 52%, rgba(23,183,215,1) 100%);
+}   
+
+</style>
+<body class="bg-[#f4f1f1]">
+<div class="area flex justify-center items-center mt-48" >
+    <form id="encrypt" class="bg-[#f4f1f1] p-12 rounded-lg">
+        <h1 class="flex justify-center text-3xl text-black font-black p-4 font-mono">ENCRYPT</h1>
         <input type="file" id="encryptFileInput" onchange="" placeholder="Enter File" class="w-80 bg-black text-white rounded p-1">
-        <input type="submit" value="Encrypt" class="w-90 bg-black text-white rounded my-4  h-8 hover:bg-gray-700 hover:text-white duration-700" >
+        <input type="submit" value="Encrypt" class="w-90 bg-teal-600 p-1 text-white rounded my-4  h-8 hover:bg-gray-700 hover:text-white duration-700" >
         <a id="encryptedLink" class="flex justify-center text-red-500" download  style="display: none;" >Download Encrypted File</a>
-        <span id="key" onclick="copy.showToast()" class="hover:cursor-pointer"></span>
+        <span class="flex"><p>Encryption Key : </p><span id="key" onclick="copy.showToast()" class="hover:cursor-pointer"></span></span>
     </form>
 </div >
         <script src="./js/aos.js"></script>
